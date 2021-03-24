@@ -19,7 +19,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
-  line-height: 1.3em;
+  line-height: 1.5em;
   color: var(--body-clr);
 }
 
@@ -74,6 +74,10 @@ strong {
   font-weight: 700;
 }
 
+.site-title {
+  margin: 1.5em 0 3em 0;
+}
+
 .site-title h1 {
   font-size: 2.15rem;
 }
@@ -122,10 +126,12 @@ nav a,
 .sidebar__title,
 .sidebar__text {
   font-size: 1.125rem;
+  line-height: 1.2;
 }
 
 .sidebar--about__text {
   font-size: .875rem;
+  line-height: 1.5;
 }
 
 .sidebar__title {
@@ -168,11 +174,9 @@ nav ul {
 }
 
 nav li {
-    margin: .5em 0;
+  margin: 0 0 2em 2em;
+  line-height: 1.2;
   }
-nav li {
-  margin-left: 2em;
-}
 
 nav a {
   text-decoration: none;
@@ -206,6 +210,10 @@ nav a:focus {
 .main,
 .aside {
   margin: 0 0 4rem 0;
+}
+
+.main {
+  margin-top: 2em;
 }
 .image-full {
   max-height: 300px;
@@ -293,12 +301,21 @@ nav a:focus {
   header {
     text-align: left;
   }
+
+  .site-title,
+  nav {
+    margin-top: 2em;
+  }
+
+  .site-title {
+    margin-bottom: 0;
+  }
   
   .container-nav,
   nav ul {
     display: flex;
     justify-content: space-between;
-  }  
+  }
   
   /* body */
   
@@ -328,6 +345,7 @@ nav a:focus {
   .aside {
     padding: 0;
     align-self: baseline;
+    margin-top: 2em;
   }
   
   .col-3 {
